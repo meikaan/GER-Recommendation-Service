@@ -1,0 +1,4 @@
+{
+  "host": "recommendation-service-app.feathersjs.com",
+  "port": "PORT"
+}
