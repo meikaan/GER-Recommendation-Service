@@ -6,6 +6,7 @@ class Service {
   }
 
   async find (params) {
+    console.log("----reached recommenations----");
     const query = params.query;
     if(query && query.type == "person"){
       return this.app.get('ger').recommendations_for_person(query.namespace, query.person, { actions: { [query.action]: 1} });

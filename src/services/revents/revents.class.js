@@ -16,8 +16,9 @@ class Service {
   }
 
   async create (data, params) {
+    console.log("---reached revents---");
     //TODO: Find better way to ensure mandatory params
-    const mandatoryParams = ['namespace', 'person', 'action', 'thing'];
+    const mandatoryParams = ['namespace', 'person', 'action', 'thing', 'expires_at'];
     if(data.constructor !== Array){
       data = [data];
     }
@@ -27,7 +28,7 @@ class Service {
         throw new Error(`Missing Parameter: ${param}`); 
       })  
     })
-    
+    console.log(data);
     return this.app.get('ger').events(data);  
   }
 

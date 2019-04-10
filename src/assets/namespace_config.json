@@ -4,5 +4,11 @@
 	},
 	{
 		"name": "services"
+	},
+	{
+		"name": "properties"
+	},
+	{
+		"name": "timeslots"
 	}
 ]
